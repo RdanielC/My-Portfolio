@@ -1,0 +1,80 @@
+.block{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .yellow {
+    background-color: yellow;
+    border-radius: 100px;
+  }
+  
+  .red {
+    background-color: red;
+    border-radius: 100px;
+  }
+  
+  .blue{
+    background-color: blue;
+    border-radius: 100px;
+  }
+  
+  .row{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+  }
+  
+  .orange{
+    background-color: orange;
+    position: relative;
+    left: 100px;
+    top: -300px;
+    border-radius: 100px;
+  }
+  
+  .black{
+    background-color:black;
+    position: relative;
+    left: 100px;
+    top: -300px;
+    border-radius: 100px;
+  }
+  
+  .grey{
+    background-color: grey;
+    position: relative;
+    left: 100px;
+    top: -300px;
+    border-radius: 100px;
+  }
+  
+  .lock{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  
+  .green{
+    background-color: green;
+    position:relative;
+    left: 200px;
+    top: -600px;
+    border-radius: 100px;
+  }
+  
+  .pink{
+    background-color: pink;
+    position:relative;
+    left: 200px;
+    top: -600px;
+    border-radius: 100px;
+  }
+  
+  .purple{
+    background-color: purple;
+    position:relative;
+    left: 200px;
+    top: -600px;
+    border-radius: 100px;
+  }
+  
