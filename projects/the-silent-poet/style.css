@@ -1,5 +1,5 @@
 h1{
-    color:darkblue; 
+    color:red; 
     font-style:italic;
     text-align: center;
 }
@@ -8,7 +8,7 @@ p{
     font-size: 20px;
     font-style: oblique;
     text-align: center;
-    color:purple;
+    color: white;
 }
 
 img{
@@ -18,5 +18,11 @@ img{
     margin-left: auto;
     margin-right: auto;
 
+}
+
+body{
+    background-image: url('https://media1.giphy.com/media/FE0WTM8BG754I/200w.webp?cid=790b76115d0ee68d6958556236215678&rid=200w.webp');
+    background-size: cover;
+    background-image: repeating-radial-gradient(blue, black)
 }
 
