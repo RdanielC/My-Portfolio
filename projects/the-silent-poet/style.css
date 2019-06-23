@@ -26,3 +26,8 @@ body{
     background-image: repeating-radial-gradient(blue, black)
 }
 
+audio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
