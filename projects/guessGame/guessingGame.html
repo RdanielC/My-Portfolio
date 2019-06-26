@@ -5,7 +5,7 @@
 <script>
 var number =Math.floor(Math.random()  * 20) + 1;
 
-var turns = 5;
+var turns = 10;
 
 let hint = 'Guess my number between 1 and 20';
 
@@ -15,24 +15,24 @@ var guess = prompt(hint);
 
 var integer = Number(guess);
 
-if(guess === number){
+if(guess == number){
    prompt(
       'You are correct!'
    );
 } 
 else{
-  
+  turns = turns - 1;
    if (guess > number){
       
       hint = 'Your guess is to big!' + 'You have ' + turns + ' turns left'      
-      turns = turns - 1;
+      // turns = turns - 1;
    }
    else{
       
       hint = 'Your guess is to small!' + 'You have ' + turns + ' turns left'      
 
       
-      turns = turns - 1;
+      // turns = turns - 1;
    }
 } 
 
