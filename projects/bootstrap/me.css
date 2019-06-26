@@ -12,17 +12,30 @@ h1{
 }
 h2{
     color: whitesmoke;
+    margin-left: 200px;
 }
 p{
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 20px;
     color: aliceblue;
 }
-/* .work {
-    height: 200px;
-    width: 300px;
+/* .B{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
 } */
 img {
-    height: 200px;
-    width: 300px; 
+    height: 400px;
+    width: 400px; 
+    float: right;
+    margin-right: 100px;
 }
+
+
+
+
+
+
+/* .words{
+    display: inline-block;
+} */
