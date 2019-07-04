@@ -80,3 +80,20 @@ h2{
  #d1:hover #d2{
     visibility: visible;
 }
+#belA{
+    width: 220px;
+    background-color: red;
+    position: relative;
+    left: 590px;
+    top: 350px;
+    
+}
+#belA:hover{
+    background-color: aqua;
+    font-style: italic;
+}
+#belA:active{
+    background-color: goldenrod;
+    /* transform: scale(10px, 20px,); */
+}
+ 
