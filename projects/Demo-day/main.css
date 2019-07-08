@@ -29,6 +29,7 @@ button{
     height: 100px;
     width: 100px;
     font-size: 30px;
+    border-radius: 10px;
 }
 
 button:hover{
@@ -64,6 +65,7 @@ h2{
     position: relative;
     top: 350px;
     left: 540px;
+    border-radius: 10px;
 }
 #d1{
     color:aqua; 
@@ -86,6 +88,7 @@ h2{
     position: relative;
     left: 590px;
     top: 350px;
+    border-radius: 10px;
     
 }
 #belA:hover{
@@ -96,4 +99,51 @@ h2{
     background-color: goldenrod;
     /* transform: scale(10px, 20px,); */
 }
- 
+ #b3{
+    width: 220px;
+    background-color: red;
+    position: relative;
+    left: 590px;
+    top: 510px; 
+    border-radius: 10px;
+ }
+#b3:hover{
+    background-color: aqua;
+    font-style: italic;
+    transform: scale(10px, 20px,);
+}
+#b3:active{
+    background-color: goldenrod; 
+}
+.bel2{
+    background-color: aqua;
+    position: relative;
+    top: 350px;
+    left: 540px;
+    border-radius: 10px;
+    font-size: 23px;
+}
+.new{
+    background-color: aqua;
+    position: relative;
+    top: 350px;
+    left: 540px;
+    border-radius: 10px;
+    font-size: 20px;
+    /* display: inline-block; */
+}
+.neW{
+    height: 115px;
+    width: 120px;
+    background-color: aqua;
+    position: relative;
+    top: 350px;
+    left: 490px;
+    border-radius: 10px;
+    font-size: 15px;
+    float: left;
+}
+.test {
+    display: inline-block;
+
+}
