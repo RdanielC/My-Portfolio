@@ -124,10 +124,11 @@ h2{
     font-size: 23px;
 }
 .new{
+    /* width: 130px; */
     background-color: aqua;
     position: relative;
     top: 350px;
-    left: 540px;
+    left: 480px;
     border-radius: 10px;
     font-size: 20px;
     /* display: inline-block; */
@@ -143,7 +144,45 @@ h2{
     font-size: 15px;
     float: left;
 }
-.test {
+.New {
     display: inline-block;
-
+    height: 115px;
+    width: 120px;
+    background-color: aqua;
+    position: relative;
+    top: 350px;
+    left: 490px;
+    border-radius: 10px;
+    font-size: 18px;
 }
+#hidden{
+    color: rgb(21, 220, 235);
+    position: relative;
+    top: 400px;
+    /* visibility: hidden; */
+}
+#hidden:hover{
+    color: red;
+}
+#b5{
+    width: 220px;
+    background-color: red;
+    position: relative;
+    left: 590px;
+    top: 510px;
+    border-radius: 10px;
+}
+#b5:hover{
+    background-color: aqua;
+    font-style: italic;
+}
+#b5:active{
+    background-color: goldenrod;
+}
+a {
+    text-decoration: none;
+}
+/* h3{
+    position: relative;
+    bottom: 300px;
+} */
