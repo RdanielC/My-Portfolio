@@ -4,8 +4,27 @@
 <link rel = 'stylesheet' href = 'main.css'>
     </head>
     <body>
-<script src = 'main.js'></script>
 
+<img id = 'img-change' src = 'https://media1.tenor.com/images/c5ee754e6f0f4f31ad65784ef2ab8e09/tenor.gif?itemid=5896479'>
+<button id = 'change'>Next</button>
+<script>
+let position = 0;
+var pics = ['https://media1.tenor.com/images/c5ee754e6f0f4f31ad65784ef2ab8e09/tenor.gif?itemid=5896479', 'https://markmanson.net/wp-content/uploads/2013/11/keep-calm-and-admit-you-re-wrong-6.png']
+document.querySelector('#change').onclick = function () {
+  var Change = document.querySelector('#img-change');
+  if (position == 1){
+    position = 0 ;
+    Change.src = pics[position];
+    console.log(position) 
+  }
+  else {
+    position++;
+    Change.src = pics[position];
+    console.log(position)   
+  }  
+}
+</script>
+<a href = 'eighthtq.html'><div id = 'hidden'>Click to go back</div></a>
     </body>
 </html>
 

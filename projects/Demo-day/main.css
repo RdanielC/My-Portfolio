@@ -63,10 +63,11 @@ h2{
 }
 .bel{
     background-color: aqua;
-    position: relative;
-    top: 350px;
-    left: 540px;
+    position: relative; 
+    left: 500px; 
     border-radius: 10px;
+     top: 350px; 
+     
 }
 #d1{
     color: rgb(21, 220, 235); 
@@ -183,5 +184,50 @@ h2{
 a {
     color: inherit;
     text-decoration: none;
+}
+#hidden1 {
+    color:  rgb(21, 220, 235);
+    position: relative;
+    top: 200px;   
+}
+#hidden1:hover {
+color:red;
+}
+
+#change {
+    width: 220px;
+    background-color: red;
+    position: relative;
+    left: 590px;
+    top: 510px; 
+    border-radius: 10px;
+}
+#change:hover{
+    background-color: aqua;
+}
+#change:active{
+    color:gold;
+}
+#back{
+    background-color: aqua;
+    font-size: 20px;
+}
+#back:hover{
+    background-color: red;
+}
+#back:active{
+    background-color: gold;
+}
+#trick{
+    background-color: aqua;
+    position: relative;
+    left: 1200px;
+    font-size: 20px;
+}
+#trick:hover{
+    background-color: red;
+}
+#trick:active{
+    background-color: gold;
 }
 
