@@ -272,3 +272,12 @@ text-align: center;
 color: whitesmoke;
 font-size: 25px;
 }
+#last{
+    height: 300px;
+    width: 600px;
+    position: relative;
+    right: 100px;;
+}
+#timer{
+    display: inline-block;
+}
