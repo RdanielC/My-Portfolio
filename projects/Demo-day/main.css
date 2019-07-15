@@ -265,3 +265,10 @@ color:red;
 #hint2:active{
     background-color: gold;
 }
+
+
+h3{
+text-align: center;
+color: whitesmoke;
+font-size: 25px;
+}
