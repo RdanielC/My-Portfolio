@@ -1,0 +1,41 @@
+body{
+    background-size: cover;
+    background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+}
+h1{
+    color: whitesmoke;
+    font-style: italic;
+    margin-left: 45%;
+}
+#ME{
+    font-style: oblique;
+}
+h2{
+    color: whitesmoke;
+    margin-left: 200px;
+}
+p{
+    margin-left: 20px;
+    font-size: 20px;
+    color: aliceblue;
+}
+/* .B{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+} */
+img {
+    height: 400px;
+    width: 400px; 
+    float: right;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+/* .words{
+    display: inline-block;
+} */
