@@ -1,7 +1,6 @@
 
-localStorage.setItem("counter", 0);
 // define vars to hold the values
-let seconds = localStorage.getItem("counter");
+let seconds = 0;//localStorage.getItem("counter");
 let minutes = 0;
 let hours = 0;
 
@@ -16,11 +15,11 @@ let displayHours = 0;
 //clock status
 
 //stop watch func, logic
-
+while(true==true){
 function stopWatch() {
     
     seconds ++;
-    localStorage.setItem("counter",seconds);
+   // localStorage.setItem("counter",seconds);
     //logic to increment values
 
     if (seconds / 60 === 1){
@@ -56,6 +55,7 @@ function stopWatch() {
 
 }
  interval = window.setInterval(stopWatch, 1000);
+}
 
 
 
