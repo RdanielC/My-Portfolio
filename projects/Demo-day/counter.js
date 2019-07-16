@@ -1,5 +1,7 @@
+
+localStorage.setItem("counter", 0);
 // define vars to hold the values
-let seconds = 0;
+let seconds = localStorage.getItem("counter");
 let minutes = 0;
 let hours = 0;
 
@@ -9,15 +11,16 @@ let displaySeconds = 0;
 let displayMinutes = 0;
 let displayHours = 0;
 //create setInterval func
-let interval = null;
 
+
+//clock status
 
 //stop watch func, logic
 
 function stopWatch() {
-
+    
     seconds ++;
-
+    localStorage.setItem("counter",seconds);
     //logic to increment values
 
     if (seconds / 60 === 1){
@@ -52,6 +55,22 @@ function stopWatch() {
     document.getElementById('display').innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 
 }
+ interval = window.setInterval(stopWatch, 1000);
 
-window.setInterval(stopWatch, 1000);
 
+
+/*
+function start() {
+    if(status === 'stopped'){
+        //start the clock
+       
+        document.getElementById('start').innerHTML = 'Start';
+        status = 'started';
+    } else{
+        window.clearInterval(interval);
+        document.getElementById('start').innerHTML = 'Start'
+        status = 'stopped'
+    }
+}
+
+*/
