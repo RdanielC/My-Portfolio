@@ -2,15 +2,16 @@
 
 
 // define vars to hold the values
-let seconds = 0;    //localStorage.getItem("counter");
-let minutes = 0;
-let hours = 0;
+let seconds = Number(sessionStorage.getItem('seconds'));    //localStorage.getItem("counter");
+let minutes = Number(sessionStorage.getItem('minutes'));
+let hours = Number(sessionStorage.getItem('hours'));
 
 //define var to hold display values
 
-let displaySeconds = 0;
-let displayMinutes = 0;
-let displayHours = 0;
+let displaySeconds = sessionStorage.getItem('seconds');
+let displayMinutes = sessionStorage.getItem('minutes');
+let displayHours = sessionStorage.getItem('hours');
+
 //create setInterval func
 
 
@@ -48,6 +49,7 @@ function stopWatch() {
     } else {
         displayHours = hours;
     }
+    
 
     document.querySelector('.watch').onclick = function() {
         sessionStorage.setItem('seconds', displaySeconds)
@@ -56,6 +58,8 @@ function stopWatch() {
 
 
     }
+    
+    
 document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":"+displaySeconds;
     
  }
