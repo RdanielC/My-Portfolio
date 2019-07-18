@@ -83,5 +83,3 @@ document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":
     //     status = 'stopped'
     // }
 
-
-
