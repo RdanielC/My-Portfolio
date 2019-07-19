@@ -2,19 +2,17 @@
 
 
 // define vars to hold the values
-let seconds = Number(sessionStorage.getItem('seconds'));    //localStorage.getItem("counter");
-let minutes = Number(sessionStorage.getItem('minutes'));
-let hours = Number(sessionStorage.getItem('hours'));
+let seconds = 0;    //localStorage.getItem("counter");
+let minutes = 0;
+let hours = 0;
 
 //define var to hold display values
 
-let displaySeconds = sessionStorage.getItem('seconds');
-let displayMinutes = sessionStorage.getItem('minutes');
-let displayHours = sessionStorage.getItem('hours');
-
+let displaySeconds = 0;
+let displayMinutes = 0;
+let displayHours = 0;
 //create setInterval func
-// let interval = null;
-// let status = 'stopped';
+
 
 //clock status
 
@@ -50,22 +48,14 @@ function stopWatch() {
     } else {
         displayHours = hours;
     }
-    
 
     document.querySelector('.watch').onclick = function() {
-        console.log('WORKING')
         sessionStorage.setItem('seconds', displaySeconds)
         sessionStorage.setItem('minutes', displayMinutes)
         sessionStorage.setItem('hours', displayHours)
 
-        // document.querySelector('.wrong').onclick = function() {
-        //     sessionStorage.setItem('seconds', displaySeconds)
-        //     sessionStorage.setItem('minutes', displayMinutes)
-        //     sessionStorage.setItem('hours', displayHours)
-    
+
     }
-    
-    
 document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":"+displaySeconds;
     
  }
@@ -75,16 +65,18 @@ document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":
 
 
 
-// function stopWatch() {
+// function start() {
 //     if(status === 'stopped'){
 //         //start the clock
        
 //         document.getElementById('start').innerHTML = 'Start';
 //         status = 'started';
+//     } else{
+//         window.clearInterval(interval);
+//         document.getElementById('start').innerHTML = 'Start'
+//         status = 'stopped'
 //     }
-        //  else{
-    //     window.clearInterval(interval);
-    //     document.getElementById('start').innerHTML = 'Start'
-    //     status = 'stopped'
-    // }
+// }
+
+
 

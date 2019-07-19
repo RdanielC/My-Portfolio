@@ -1,20 +1,32 @@
-
-
-
-// define vars to hold the values
-let seconds = Number(sessionStorage.getItem('seconds'));    //localStorage.getItem("counter");
-let minutes = Number(sessionStorage.getItem('minutes'));
-let hours = Number(sessionStorage.getItem('hours'));
+if (sessionStorage.getItem('seconds') == null) {
+    var seconds = 0;    //localStorage.getItem("counter");
+    var minutes = 0;
+    var hours = 0;
 
 //define var to hold display values
 
-let displaySeconds = sessionStorage.getItem('seconds');
-let displayMinutes = sessionStorage.getItem('minutes');
-let displayHours = sessionStorage.getItem('hours');
-
+    var displaySeconds = 0;
+    var displayMinutes = 0;
+    var displayHours = 0;
 //create setInterval func
-// let interval = null;
-// let status = 'stopped';
+} else {
+    var seconds = Number(sessionStorage.getItem('seconds'));    //localStorage.getItem("counter");
+    var minutes = Number(sessionStorage.getItem('minutes'));
+    var hours = Number(sessionStorage.getItem('hours'));
+    
+    //define var to hold display values
+    
+    var displaySeconds = sessionStorage.getItem('seconds');
+    var displayMinutes = sessionStorage.getItem('minutes');
+    var displayHours = sessionStorage.getItem('hours');
+    // define vars to hold the values
+
+}
+
+
+
+
+
 
 //clock status
 
@@ -50,22 +62,15 @@ function stopWatch() {
     } else {
         displayHours = hours;
     }
-    
-
-    document.querySelector('.watch').onclick = function() {
-        console.log('WORKING')
+    Try = 
+    function Try() {
+        console.log('workign')
         sessionStorage.setItem('seconds', displaySeconds)
         sessionStorage.setItem('minutes', displayMinutes)
         sessionStorage.setItem('hours', displayHours)
 
-        // document.querySelector('.wrong').onclick = function() {
-        //     sessionStorage.setItem('seconds', displaySeconds)
-        //     sessionStorage.setItem('minutes', displayMinutes)
-        //     sessionStorage.setItem('hours', displayHours)
-    
-    }
-    
-    
+
+    };
 document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":"+displaySeconds;
     
  }
@@ -75,16 +80,15 @@ document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":
 
 
 
-// function stopWatch() {
+// function start() {
 //     if(status === 'stopped'){
 //         //start the clock
        
 //         document.getElementById('start').innerHTML = 'Start';
 //         status = 'started';
+//     } else{
+//         window.clearInterval(interval);
+//         document.getElementById('start').innerHTML = 'Start'
+//         status = 'stopped'
 //     }
-        //  else{
-    //     window.clearInterval(interval);
-    //     document.getElementById('start').innerHTML = 'Start'
-    //     status = 'stopped'
-    // }
-
+// }
