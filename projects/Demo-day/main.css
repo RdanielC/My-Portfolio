@@ -294,3 +294,51 @@ font-size: 25px;
 #stop:active{
     background-color: gold;
 }
+
+#lastB{
+    background-color: white;
+    border: solid 4px blue;
+    height: 120px;
+    width: 200px;
+    position: relative;
+    top:310px;
+    left: 420px;
+
+}
+#lastB:hover{
+    background-image: radial-gradient(#DCDCDC, 	#00FFFF);
+   transform: scale(123px, 120px);
+    transform: translate(12px, 12px);
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     */
+}
+#aboutMe{
+    background-color: white;
+    border: solid 4px blue;
+    height: 120px;
+    width: 150px;
+    position: relative;
+    left:670px;
+    top: 320px;
+}
+#aboutMe:hover{
+    background-image: radial-gradient(#DCDCDC, 	#00FFFF);
+    transform: scale(123px, 120px);
+     transform: translate(12px, 12px);
+}
+input{
+    height: 20px;
+    width: 140px;
+    position: relative;
+    left: 320px;
+    top: 310px;
+}
+#LeaderB{
+    border-radius: 0px;
+    font-size: 10px;
+    height: 30px;
+    width: 100px;;
+   position: relative;
+   left: 700px;
+   top: 260px; 
+}
