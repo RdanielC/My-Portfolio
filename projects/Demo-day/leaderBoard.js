@@ -10,8 +10,6 @@ function leader(){
     localStorage.setItem(name, total);
     console.log(total);
     for (let i = 0; i < 10; i++) {
-
-       
         const key = localStorage.key(i)
         const value = localStorage.getItem(key)
         var item = key + ' ' + value
@@ -19,7 +17,14 @@ function leader(){
         var text = document.createTextNode(item);
         li.appendChild(text);
         document.getElementById('myOL').appendChild(li);
+    // if(i = null) {
+    //     localStorage.setItem(name, "");
+    //     localStorage.setItem(total, "");
+    // }
     }
+    
+        
+    
 }
 
 document.querySelector('#lastB').onclick = function(){

@@ -368,3 +368,11 @@ position: relative;
 bottom: 120px;
 left: 10px;
 }
+h6{
+    font-family: fantasy; 
+    position: relative;
+    left: 75%;
+    bottom: 108%;
+    font-size: 20px;
+    color: greenyellow;
+}
