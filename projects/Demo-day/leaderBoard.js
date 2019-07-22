@@ -9,7 +9,7 @@ function leader(){
   
     localStorage.setItem(name, total);
     console.log(total);
-    for (let i = 0; i < localStorage.length; i++) {
+    for (let i = 0; i < 10; i++) {
 
        
         const key = localStorage.key(i)
