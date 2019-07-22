@@ -342,3 +342,9 @@ input{
    left: 700px;
    top: 260px; 
 }
+#display{
+    color: purple;
+    font-size: 30px;
+    text-align: right;
+    font-family: cursive;
+}

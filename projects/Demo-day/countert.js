@@ -13,8 +13,6 @@ let displayMinutes = sessionStorage.getItem('minutes');
 let displayHours = sessionStorage.getItem('hours');
 
 //create setInterval func
-// let interval = null;
-// let status = 'stopped';
 
 //clock status
 
@@ -71,20 +69,21 @@ document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":
  }
     interval = window.setInterval(stopWatch,1000);
 
-
-
-
-
-// function stopWatch() {
-//     if(status === 'stopped'){
-//         //start the clock
-       
-//         document.getElementById('start').innerHTML = 'Start';
-//         status = 'started';
-//     }
-        //  else{
-    //     window.clearInterval(interval);
-    //     document.getElementById('start').innerHTML = 'Start'
-    //     status = 'stopped'
+    // function start() {
+    //     if(status === 'stopped'){
+    //         //start the clock
+    //        interval = interval = window.setInterval(stopWatch,1000);
+    //         document.getElementById('start').innerHTML = 'Start';
+    //         status = 'started';
+    //      } //else{
+    //     //     window.clearInterval(interval);
+    //     //     document.getElementById('start').innerHTML = 'Start'
+    //     //     status = 'stopped'
+    //     // }
     // }
+    
+
+
+
+
 

@@ -8,6 +8,7 @@ if (sessionStorage.getItem('seconds') == null) {
     var displaySeconds = 0;
     var displayMinutes = 0;
     var displayHours = 0;
+
 //create setInterval func
 } else {
     var seconds = Number(sessionStorage.getItem('seconds'));    //localStorage.getItem("counter");
@@ -74,21 +75,18 @@ function stopWatch() {
 document.getElementById('display').innerHTML= displayHours+":"+displayMinutes+":"+displaySeconds;
     
  }
-    interval = window.setInterval(stopWatch,1000);
+     interval = window.setInterval(stopWatch,1000);
 
-
-
-
-
-// function start() {
-//     if(status === 'stopped'){
-//         //start the clock
-       
-//         document.getElementById('start').innerHTML = 'Start';
-//         status = 'started';
-//     } else{
-//         window.clearInterval(interval);
-//         document.getElementById('start').innerHTML = 'Start'
-//         status = 'stopped'
-//     }
-// }
+    // function start() {
+    //     if(status === 'stopped'){
+    //         //start the clock
+    //        interval = interval = window.setInterval(stopWatch,1000);
+    //         document.getElementById('start').innerHTML = 'Start';
+    //         status = 'started';
+    //      } //else{
+    //     //     window.clearInterval(interval);
+    //     //     document.getElementById('start').innerHTML = 'Start'
+    //     //     status = 'stopped'
+    //     // }
+    // }
+    
