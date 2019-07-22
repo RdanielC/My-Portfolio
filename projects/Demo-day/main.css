@@ -344,7 +344,15 @@ input{
 }
 #display{
     color: purple;
-    font-size: 30px;
+    font-size: 35px;
     text-align: right;
     font-family: cursive;
+}
+li{
+font-family: monospace;
+/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+font-size: 23px;
+color: greenyellow;
+position: relative;
+bottom: 200px;
 }
