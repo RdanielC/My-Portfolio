@@ -75,12 +75,13 @@ h2{
     color: rgb(21, 220, 235); 
     position: relative;
     top: 220px;
+    width: 120px;
 }
 #d2{
     color: whitesmoke;
     visibility: hidden;
     position: relative;
-    left: 305px;
+    /* left: 305px;  */
     /* top: 400px; */
 }
  #d1:hover #d2{
