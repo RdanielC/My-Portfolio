@@ -93,10 +93,16 @@ for (let i = 0; i < localStorage.length; i++) {
 // var test = numberList[x] + value1;
 for (let i = 0; i < 10; i++) {
 
-    var value2 = finalList[i]
-    if(value2 == null){
+    var listLength = document.getElementsByTagName("li").length;
+    console.log(listLength)
+    if (listLength == 10) {
         break;
     }
+    var value2 = finalList[i]
+    if(value2 == null ){
+        break;
+       
+    } 
     
     
     var li = document.createElement("li");
