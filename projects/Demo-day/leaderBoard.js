@@ -12,7 +12,7 @@ function leader(){
 
   
     localStorage.setItem(name, total);
-    console.log(total);
+    // console.log(total);
     
     var numberList = []; //list of points
 
@@ -37,6 +37,7 @@ function leader(){
     numberList[numberList.length] = value;
     nameList[nameList.length] = key;
     origin[origin.length] = key + ' ' + value;
+// console.log(value)
 }
 // console.log(numberList)
 // console.log(nameList)
@@ -46,7 +47,7 @@ numberList.sort((a, b) => a - b);
 let finalList = []
 for (let i = 0; i < localStorage.length; i++) {
     for (x in numberList) {
-        var check = nameList[x] + ' ' + numberList[i]
+        var check = nameList[x] + ' ' + numberList[i] 
         for (let z = 0; z < origin.length; z++) {
             let newOrigin = origin[z]
             if (check == newOrigin) {
@@ -68,11 +69,19 @@ for (let i = 0; i < localStorage.length; i++) {
             finalSeconds = value1 % 3600
             finalMinutes = Math.floor(finalSeconds / 60)
             finalSeconds = value1 % 60
-            value1 = string(finalHours) + ':' + string(finalMinutes) + ':' + string(finalSeconds)
-            console.log(value1)
-            finalList[finalList.length] = check
+            var value1 = finalHours + ':' + finalMinutes + ':' + finalSeconds
+            
             origin.splice(z, 1)
+            
+            var test = nameList[x] + " " + value1;
+            finalList[finalList.length] = test
+            
+            
+            console.log(finalList);
+            // finalList.appendChild(test);
                 // console.log('match')
+                // finalList.appendChild(check);
+
                 
             }
         }
@@ -81,19 +90,21 @@ for (let i = 0; i < localStorage.length; i++) {
 
 }
    
-
+// var test = numberList[x] + value1;
 for (let i = 0; i < 10; i++) {
-    var value = finalList[i]
-    if(value == null){
+
+    var value2 = finalList[i]
+    if(value2 == null){
         break;
     }
     
     
     var li = document.createElement("li");
-    var text = document.createTextNode(value);
+    var text = document.createTextNode(value2);
     li.appendChild(text);
+
     document.getElementById('myOL').appendChild(li);
-    
+    // document.getElementById('myOL').appendChild(test);
     }
 
 document.querySelector('#lastB').onclick = function(){
